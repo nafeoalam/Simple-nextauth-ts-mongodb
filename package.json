@@ -1,12 +1,8 @@
 {
-  "name": "next-auth-typescript-example",
-  "version": "0.0.0",
+  "name": "next-auth-typescript-tailwind",
+  "version": "1.0.0",
   "private": false,
   "description": "An example project for NextAuth.js using Typescript",
-  "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
-  },
-  "homepage": "http://next-auth-typescript-example.now.sh",
   "main": "",
   "scripts": {
     "dev": "next",
@@ -14,17 +10,13 @@
     "start": "next start",
     "types": "tsc --noEmit"
   },
-  "author": "Lluis Agusti <lluis@hey.com>",
-  "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
-    "Iain Collins <me@iaincollins.com>"
-  ],
+  "author": "Nafeo Alam",
   "license": "ISC",
   "prettier": {
     "semi": false
   },
   "dependencies": {
-    "mongodb": "^3.5.9 || ^4",
+    "mongodb": "^3.5.9",
     "next": "^11.0.0",
     "next-auth": "latest",
     "react": "^17.0.2",
