@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { useSession } from 'next-auth/client'
 import Layout from '../components/layout'
 import AccessDenied from '../components/access-denied'
+import { signOut } from "next-auth/client"
 
 export default function Page() {
   const [session, loading] = useSession()
@@ -28,7 +29,11 @@ export default function Page() {
     <Layout>
       <h1>Protected Page</h1>
       <p><strong>{content || "\u00a0"}</strong></p>
-      <button className="bg-yellow-700 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
+      <button onClick={e => {
+        e.preventDefault()
+        signOut()
+      }}
+        className="bg-yellow-700 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">
         Sign Out
       </button>
     </Layout>
