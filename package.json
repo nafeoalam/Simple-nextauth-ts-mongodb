@@ -1,9 +1,8 @@
 {
   "name": "next-auth-typescript-example",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "description": "An example project for NextAuth.js using Typescript",
-  "repository": "https://github.com/nextauthjs/next-auth-typescript-example.git",
   "bugs": {
     "url": "https://github.com/nextauthjs/next-auth/issues"
   },
