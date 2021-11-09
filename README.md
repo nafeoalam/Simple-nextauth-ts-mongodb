@@ -39,8 +39,8 @@ Go to [next-auth.js.org](https://next-auth.js.org) for more information and docu
 ### 1. Clone the repository and install dependancies
 
 ```
-git clone https://github.com/nextauthjs/next-auth-typescript-example.git
-cd next-auth-typescript-example
+https://github.com/nafeoalam/nextauth-ts-mongodb.git
+cd nextauth-ts-mongodb
 npm install
 ```
 
@@ -52,11 +52,9 @@ Copy the .env.local.example file in this directory to .env.local (which will be 
 cp .env.local.example .env.local
 ```
 
-Add details for one or more providers (e.g. Google, Twitter, GitHub, Email, etc).
-
 #### Database
 
-A database is needed to persist user accounts and to support email sign in. However, you can still use NextAuth.js for authentication without a database by using OAuth for authentication. If you do not specify a database, [JSON Web Tokens](https://jwt.io/introduction) will be enabled by default.
+A database is needed to persist user accounts and to support email sign in. However, you can still use NextAuth.js for authentication without a database by using OAuth for authentication. 
 
 You **can** skip configuring a database and come back to it later if you want.
 
